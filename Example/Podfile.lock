@@ -1,0 +1,39 @@
+PODS:
+  - DateTools (2.0.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - ISRemoveNull (0.0.3)
+  - MTHttpEngine (1.0.0):
+    - DateTools
+    - FMDB
+    - ISRemoveNull
+    - YYKit
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - MTHttpEngine (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - DateTools
+    - FMDB
+    - ISRemoveNull
+    - YYKit
+
+EXTERNAL SOURCES:
+  MTHttpEngine:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  ISRemoveNull: 7fb2bb73a9f173cd1d12e9cbd7c7d8766d939b4d
+  MTHttpEngine: 46618d1735b5be8e61dc731ee7945059ff8d0191
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 6fc639d20be2cc12ed32551068ec2274adb8fc0c
+
+COCOAPODS: 1.10.1

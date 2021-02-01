@@ -1,0 +1,6 @@
+framework module Pods_MTHttpEngine_Tests {
+  umbrella header "Pods-MTHttpEngine_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
