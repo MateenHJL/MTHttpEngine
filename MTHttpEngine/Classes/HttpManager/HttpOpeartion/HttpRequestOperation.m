@@ -229,7 +229,7 @@ typedef void(^httpRequestOperationCompletedBlock) (NSData * _Nullable data, NSUR
 {
     NSMutableString *url = [NSMutableString string];
     [url appendFormat:@"%@", self.item.httpRequestAbsoluteUrlString];
-    return [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    return [NSURL URLWithString:url];
 }
 
 - (NSString *)acceptTypeAppendsString

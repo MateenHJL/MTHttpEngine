@@ -72,6 +72,9 @@
 //http content-type
 - (NSMutableArray *)httpRequestAcceptableContentTypes;
 
+//http url
+- (NSString *)httpRequestUrlWithHttpItem:(BaseHttpItem *)item;
+
 //http postParams data
 - (NSString *)httpRequestPostParamsWithHttpItem:(BaseHttpItem *)item;
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTHttpEngine'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'CONTACT IF YOU HAVE ANY ISSUE:13162378587@163.COM'
 
 # This description is used to generate tags and improve search results.
