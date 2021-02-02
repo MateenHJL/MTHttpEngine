@@ -170,7 +170,7 @@
     }
     else
     {
-        _httpRequestAbsoluteUrlString = [NSString stringWithFormat:@"%@%@",self.httpReqeustDomainUrl,self.httpRequestUrl];
+        _httpRequestAbsoluteUrlString = [[BaseHttpConfigManager shareHttpConfigManager].config httpRequestUrlWithHttpItem:self];
     }
 
     return _httpRequestAbsoluteUrlString;
