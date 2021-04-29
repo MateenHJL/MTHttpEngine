@@ -278,7 +278,7 @@
     }
     else
     {
-        _httpRequestConnectedStatus = HTTPConnectionCompletedStatusUnknowStatus;
+        _httpRequestConnectedStatus = HTTPConnectionCompletedStatusConnectedFailed;
     }
     return _httpRequestConnectedStatus;
 }
