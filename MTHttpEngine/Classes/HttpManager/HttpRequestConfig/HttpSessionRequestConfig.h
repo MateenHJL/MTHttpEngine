@@ -94,6 +94,9 @@
 //display the infor of your item.such as header、postData、responseData ..
 - (NSString *)displayItemInformationWithItem:(BaseHttpItem *)item;
 
+//filter HttpStatusCode
+- (BOOL)isSuccessedRequestionWithItem:(BaseHttpItem *)item;
+
 @end
 
 

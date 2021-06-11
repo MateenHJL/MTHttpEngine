@@ -238,7 +238,16 @@
 
 - (HTTPConnectionCompletedStatus)httpRequestConnectedStatus
 {
-    if (self.httpRequestStatusCode >= 200 && self.httpRequestStatusCode <= 299)
+    BOOL isSuccessed = NO;
+    if ([[BaseHttpConfigManager shareHttpConfigManager].config respondsToSelector:@selector(isSuccessedRequestionWithItem:)])
+    {
+        isSuccessed = [[BaseHttpConfigManager shareHttpConfigManager].config isSuccessedRequestionWithItem:self];
+    }
+    else
+    {
+        isSuccessed = self.httpRequestStatusCode >= 200 && self.httpRequestStatusCode <= 299;
+    }
+    if (isSuccessed)
     {
         if (self.httpRequestType == HTTPRequestTypeRequestJsonDataType)
         {
