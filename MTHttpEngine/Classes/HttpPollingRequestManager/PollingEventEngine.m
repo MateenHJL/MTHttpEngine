@@ -67,6 +67,7 @@
     if (!timer)
     {
         timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(pollingEventAction:) userInfo:nil repeats:YES];
+        [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
     }
     [timer fire];
 }
