@@ -53,7 +53,7 @@
 {
     self.item.httpRequestStatus = HTTPRequestIsConnecting;
     self.httpUrlRequest.timeoutInterval = kNetworkTimeOutCount;
-    self.httpUrlRequest.URL = self.httpRequestAppendsUrl;
+    self.httpUrlRequest.URL = self.item.httpRequestUrl;
     switch (self.item.httpRequestMethod)
     {
         case HTTPMethodPOST:
