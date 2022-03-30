@@ -12,6 +12,7 @@
 
 @class CommonLogicDataModel;
 
+typedef void (httpProgressBlock)(CGFloat received , CGFloat total);
 typedef void(^httpSuccessfulBlock)(id dataModel);
 typedef void(^httpFailedBlock)(CommonLogicDataModel *dataModel);
 
