@@ -44,6 +44,8 @@
 @synthesize httpReuqestShouldAddSelfToLog               = _httpReuqestShouldAddSelfToLog; 
 @synthesize httpRequestResponseDataJson                 = _httpRequestResponseDataJson;
 @synthesize httpRequestPostParasString                  = _httpRequestPostParasString;
+@synthesize httpRequestPostName                         = _httpRequestPostName;
+
 - (instancetype)init
 {
     if (self = [super init])
@@ -62,7 +64,8 @@
         self.httpRequestType                   = HTTPRequestTypeRequestJsonDataType;
         self.httpResponseDataType              = HTTPResponseDataTypeUnknownType;
         self.httpRequestDebugErrorMessage      = @"";
-        self.httpRequestPostFiles              = @"";
+        self.httpRequestPostFiles              = [NSData data];
+        self.httpRequestPostName               = @"";
         self.httpRequestUploadPercent          = @"0.0";
         self.httpRequestDownloadPercent        = @"0.0";
         self.httpRequestPostFileName           = @"";

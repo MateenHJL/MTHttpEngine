@@ -34,8 +34,9 @@
 
 @property (nonatomic,strong  ) NSMutableDictionary      *httpUploadFileAttactParams;
 @property (nonatomic,copy    ) NSString                 *httpRequestPostFileName;
+@property (nonatomic,copy    ) NSString                 *httpRequestPostName;
 @property (nonatomic,readonly) NSString                 *httpRequestUploadPercent;
-@property (nonatomic,copy    ) NSString                   *httpRequestPostFiles;
+@property (nonatomic,strong  ) NSData                   *httpRequestPostFiles;
 @property (nonatomic,assign  ) CGFloat                  httpRequestUploadTotalDataCount;
 @property (nonatomic,assign  ) CGFloat                  httpRequestUploadAlreadySendDataCount;
 

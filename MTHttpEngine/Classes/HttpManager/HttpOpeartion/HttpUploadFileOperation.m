@@ -210,7 +210,7 @@ typedef void(^httpUploadFileOperationCompletedBlock) (NSData * _Nullable data, N
         [uploadFileAttachFormData appendData:[[NSString stringWithFormat:@"--%@",kBoundaryString] dataUsingEncoding:NSUTF8StringEncoding]];
         [uploadFileAttachFormData appendData:kDivisionSymbol];
 
-        [uploadFileAttachFormData appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"picture.png\"",self.item.httpRequestPostFileName] dataUsingEncoding:NSUTF8StringEncoding]];
+        [uploadFileAttachFormData appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"",self.item.httpRequestPostName,self.item.httpRequestPostFileName] dataUsingEncoding:NSUTF8StringEncoding]];
         [uploadFileAttachFormData appendData:kDivisionSymbol];
 
         //tell your server the type of files which you wanna to upload
