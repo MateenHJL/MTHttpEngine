@@ -10,8 +10,6 @@
 #import "HttpMacro.h"
 #import "HttpSessionRequestConfig.h"
 
-@class CommonLogicDataModel;
-
 typedef void(^httpSuccessfulBlock)(id dataModel);
 typedef void(^httpFailedBlock)(id dataModel);
 
