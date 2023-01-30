@@ -13,7 +13,7 @@
 @class CommonLogicDataModel;
 
 typedef void(^httpSuccessfulBlock)(id dataModel);
-typedef void(^httpFailedBlock)(CommonLogicDataModel *dataModel);
+typedef void(^httpFailedBlock)(id dataModel);
 
 @interface BaseHttpItem : NSObject
 <HttpSessionUploadFileDataSource,
