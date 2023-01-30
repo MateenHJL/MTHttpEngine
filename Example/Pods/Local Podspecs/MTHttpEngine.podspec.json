@@ -1,6 +1,6 @@
 {
   "name": "MTHttpEngine",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "summary": "CONTACT IF YOU HAVE ANY ISSUE:13162378587@163.COM",
   "description": "the framework can used your project,just implement BaseHttpItem then config what you want.",
   "homepage": "https://github.com/MateenHJL/MTHttpEngine.git",
@@ -11,7 +11,7 @@
   "authors": "Mateen",
   "source": {
     "git": "https://github.com/MateenHJL/MTHttpEngine.git",
-    "tag": "1.0.0"
+    "tag": "1.2.1"
   },
   "platforms": {
     "ios": "9.0"
@@ -31,6 +31,9 @@
     "DateTools": [
 
     ]
+  },
+  "pod_target_xcconfig": {
+    "VALID_ARCHS": "x86_64 armv7 arm64"
   },
   "static_framework": true,
   "requires_arc": true
